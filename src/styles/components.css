@@ -464,7 +464,7 @@
     position: static;
     display: flex;
     width: auto;
-    padding-inline: 3rem;
+    padding-inline: clamp(2rem, 6vw, 3rem);
     background: var(--glass-overlay);
     backdrop-filter: blur(1rem);
     transform: none;

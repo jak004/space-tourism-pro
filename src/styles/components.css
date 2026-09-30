@@ -103,7 +103,7 @@
 }
 
 .page-heading {
-  margin-block-end: 2.625rem;
+  margin-block-end: clamp(1.5rem, 5vw, 2.625rem);
 }
 
 .segmented-nav__list {

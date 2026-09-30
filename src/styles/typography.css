@@ -9,7 +9,7 @@
 }
 
 .page-heading span {
-  margin-inline-end: 1.125rem;
+  margin-inline-end: clamp(0.75rem, 2vw, 1.125rem);
   color: var(--white-50);
   font-weight: 600;
 }
@@ -26,7 +26,7 @@
 }
 
 .home-eyebrow {
-  margin: 0 0 1rem;
+  margin: 0 0 clamp(0.75rem, 2vw, 1rem);
   font-size: clamp(1rem, 1.5vw, 1.25rem);
 }
 
@@ -41,19 +41,13 @@
 }
 
 .crew-details h2 {
-  margin-block-start: 0.5rem;
+  margin-block-start: clamp(0.5rem, 1.5vw, 0.75rem);
   font-size: clamp(1.75rem, 6vw, 3.5rem);
   line-height: 1.1;
 }
 
 .technology-details h2 {
-  margin-block-start: 0.625rem;
+  margin-block-start: clamp(0.5rem, 1.5vw, 0.625rem);
   font-size: clamp(2.5rem, 7vw, 3.5rem);
   line-height: 1.05;
-}
-
-@media (min-width: 48rem) {
-  .crew-details h2 {
-    margin-block-start: 0.75rem;
-  }
 }

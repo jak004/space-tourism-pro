@@ -1,4 +1,3 @@
-
 /* Header */
 .site-header {
   z-index: 20;
@@ -448,13 +447,13 @@
 
 @media (min-width: 48rem) {
   .site-header {
-    min-height: 6rem;
+    min-height: clamp(5.5rem, 8vw, 6rem);
     padding-inline: var(--space-7);
   }
 
   .site-logo img {
-    width: 3rem;
-    height: 3rem;
+    width: clamp(2.5rem, 4vw, 3rem);
+    height: clamp(2.5rem, 4vw, 3rem);
   }
 
   .menu-toggle {
@@ -474,11 +473,11 @@
   .primary-nav ul {
     display: flex;
     width: auto;
-    gap: 2.25rem;
+    gap: clamp(2rem, 4vw, 2.25rem);
   }
 
   .nav-link {
-    height: 6rem;
+    height: clamp(5.5rem, 8vw, 6rem);
     align-items: center;
     font-size: clamp(0.875rem, 0.75rem + 0.25vw, 1rem);
   }
@@ -489,21 +488,21 @@
 
   .header-rule {
     display: block;
-    margin-inline-end: -2.5rem;
+    margin-inline-end: clamp(-2.5rem, -4vw, -1.5rem);
   }
 
   .content-page {
-    padding-block-start: 2.5rem;
+    padding-block-start: clamp(2rem, 4vw, 2.5rem);
   }
 
   .page-heading {
-    margin-block-end: 3.75rem;
+    margin-block-end: clamp(3rem, 6vw, 3.75rem);
   }
 
   .home-hero {
     min-height: calc(100svh - 6rem);
-    gap: 3.125rem;
-    padding-block-start: 3.125rem;
+    gap: clamp(2.5rem, 5vw, 3.125rem);
+    padding-block-start: clamp(2.5rem, 5vw, 3.125rem);
   }
 
   .home-hero h1 {
@@ -511,13 +510,13 @@
   }
 
   .explore-button {
-    width: 15.125rem;
-    height: 15.125rem;
+    width: clamp(13rem, 24vw, 15.125rem);
+    height: clamp(13rem, 24vw, 15.125rem);
     font-size: clamp(1.75rem, 2vw, 2rem);
   }
 
   .destination-grid {
-    gap: 3rem;
+    gap: clamp(2.5rem, 5vw, 3rem);
   }
 
   .destination-visual img {
@@ -525,7 +524,7 @@
   }
 
   .destination-details {
-    margin-block-start: 2.625rem;
+    margin-block-start: clamp(2.25rem, 5vw, 2.625rem);
   }
 
   .destination-stats {
@@ -537,7 +536,7 @@
   }
 
   .crew-grid {
-    min-height: 38.75rem;
+    min-height: clamp(36rem, 60vw, 38.75rem);
   }
 
   .crew-copy {
@@ -547,7 +546,7 @@
 
   .crew-copy .segmented-nav {
     order: 0;
-    margin-block-start: 2.5rem;
+    margin-block-start: clamp(2rem, 4vw, 2.5rem);
     margin-block-end: 0;
   }
 
@@ -561,7 +560,7 @@
   }
 
   .crew-visual img {
-    max-height: 33.75rem;
+    max-height: clamp(30rem, 55vw, 33.75rem);
   }
 
   .crew-details .body-copy {
@@ -576,16 +575,15 @@
     grid-template-columns: auto 1fr;
     grid-template-areas: 'tabs copy';
     align-items: center;
-    padding-inline-start: 2.5rem;
+    padding-inline-start: clamp(2rem, 5vw, 2.5rem);
     text-align: start;
   }
 
   .technology-visual {
     position: absolute;
     inset-inline-end: 0;
-    inset-block-start: 18.75rem;
+    inset-block-start: clamp(16rem, 30vw, 18.75rem);
     width: 46vw;
-    margin: 0;
   }
 
   .segmented-nav--technology {
@@ -602,42 +600,42 @@
   }
 
   .segment-link--technology {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: clamp(3rem, 5vw, 3.5rem);
+    height: clamp(3rem, 5vw, 3.5rem);
     font-size: clamp(1.25rem, 2vw, 1.5rem);
   }
 }
 
 @media (min-width: 75rem) {
   .site-header {
-    padding-block-start: 2.5rem;
-    padding-inline: 3.4375rem;
+    padding-block-start: clamp(2rem, 3vw, 2.5rem);
+    padding-inline: clamp(3rem, 4vw, 3.4375rem);
   }
 
   .header-rule {
-    margin-inline-start: 4rem;
-    margin-inline-end: -1.25rem;
+    margin-inline-start: clamp(3rem, 5vw, 4rem);
+    margin-inline-end: clamp(-1.25rem, -2vw, -0.75rem);
   }
 
   .primary-nav {
-    padding-inline: 4rem;
+    padding-inline: clamp(3rem, 5vw, 4rem);
   }
 
   .primary-nav ul {
-    gap: 3rem;
+    gap: clamp(2.5rem, 4vw, 3rem);
   }
 
   .nav-link {
-    height: 5.5rem;
+    height: clamp(5rem, 7vw, 5.5rem);
     font-size: clamp(0.875rem, 0.75rem + 0.25vw, 1rem);
   }
 
   .content-page {
-    padding-block-start: 3rem;
+    padding-block-start: clamp(2.5rem, 4vw, 3rem);
   }
 
   .page-heading {
-    margin-block-end: 5rem;
+    margin-block-end: clamp(4rem, 6vw, 5rem);
   }
 
   .home-hero {
@@ -645,8 +643,8 @@
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 5rem;
-    padding-block: 6.25rem 8.125rem;
+    gap: clamp(4rem, 6vw, 5rem);
+    padding-block: clamp(5rem, 8vw, 6.25rem) clamp(6rem, 10vw, 8.125rem);
     text-align: start;
   }
 
@@ -660,7 +658,7 @@
 
   .destination-grid {
     grid-template-columns: 1.05fr 0.95fr;
-    gap: 5rem;
+    gap: clamp(4rem, 6vw, 5rem);
   }
 
   .destination-panel {
@@ -683,11 +681,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: end;
-    min-height: 40.625rem;
+    min-height: clamp(38rem, 50vw, 40.625rem);
   }
 
   .crew-copy {
-    padding-block-end: 4.375rem;
+    padding-block-end: clamp(3.5rem, 6vw, 4.375rem);
   }
 
   .crew-visual {
@@ -695,14 +693,14 @@
   }
 
   .crew-visual img {
-    max-height: 38.125rem;
+    max-height: clamp(36rem, 48vw, 38.125rem);
   }
 
   .technology-grid {
-    grid-template-columns: 5rem minmax(23.75rem, 35rem) 1fr;
+    grid-template-columns: clamp(4.5rem, 6vw, 5rem) minmax(23.75rem, 35rem) 1fr;
     grid-template-areas: 'tabs copy visual';
-    gap: 3.75rem;
-    min-height: 31.25rem;
+    gap: clamp(3rem, 5vw, 3.75rem);
+    min-height: clamp(29rem, 40vw, 31.25rem);
     padding-inline-start: 0;
   }
 
@@ -729,4 +727,3 @@
     scroll-behavior: auto;
   }
 }
-

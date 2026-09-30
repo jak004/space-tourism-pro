@@ -22,11 +22,11 @@ export function Technology() {
         <div className="technology-inner container">
           <PageHeading number="03">Space launch 101</PageHeading>
           <div className="technology-grid">
-            <SegmentedNav items={tabs} ariaLabel="Technology" />
+            <SegmentedNav items={tabs} ariaLabel="Technology" variant="technology" />
             <TechnologyDetails item={item} />
             <div className="technology-visual">
               <picture>
-                <source media="(min-width: 768px)" srcSet={item.images.portrait} />
+                <source media="(min-width: 48rem)" srcSet={item.images.portrait} />
                 <img src={item.images.landscape} alt={item.name} />
               </picture>
             </div>

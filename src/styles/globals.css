@@ -6,18 +6,22 @@
   --blue-300: #d0d6f9;
   --white-25: rgb(255 255 255 / 0.25);
   --white-50: rgb(255 255 255 / 0.5);
+  --nav-overlay: rgb(11 13 23 / 0.96);
+  --glass-overlay: rgb(255 255 255 / 0.05);
+  --shadow-hover: rgb(255 255 255 / 0.12);
+  --shadow-transparent: rgb(255 255 255 / 0);
 
   --container: 90rem;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
   --space-4: 1rem;
-  --space-5: 1.5rem;
-  --space-6: 2rem;
-  --space-7: 2.5rem;
-  --space-8: 3rem;
-  --space-9: 4rem;
-  --space-10: 5rem;
+  --space-5: clamp(1.25rem, 2vw, 1.5rem);
+  --space-6: clamp(1.5rem, 3vw, 2rem);
+  --space-7: clamp(2rem, 4vw, 2.5rem);
+  --space-8: clamp(2.25rem, 5vw, 3rem);
+  --space-9: clamp(3rem, 6vw, 4rem);
+  --space-10: clamp(4rem, 8vw, 5rem);
 
   --ease: 220ms ease;
 }
@@ -150,8 +154,7 @@ ol {
   *,
   *::before,
   *::after {
-    transition-duration: 0.01ms;
-    animation-duration: 0.01ms;
-    animation-iteration-count: 1;
+    transition: none;
+    animation: none;
   }
 }

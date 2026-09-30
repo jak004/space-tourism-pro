@@ -23,7 +23,7 @@
   display: none;
   height: 0.0625rem;
   flex: 1;
-  margin-inline-start: 4rem;
+ margin-inline-start: clamp(1rem, 5vw, 4rem);
   background: var(--white-25);
 }
 
@@ -710,5 +710,15 @@
   .technology-visual img {
     width: min(37vw, 32.1875rem);
     margin-inline-start: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 5.5rem;
+  min-height: clamp(5rem, 8vw, 5.5rem);
   padding: var(--space-5);
 }
 
@@ -15,8 +15,8 @@
 }
 
 .site-logo img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: clamp(2rem, 5vw, 2.5rem);
+  height: clamp(2rem, 5vw, 2.5rem);
 }
 
 .header-rule {
@@ -64,13 +64,13 @@
 .primary-nav ul {
   display: grid;
   width: 100%;
-  gap: 1.75rem;
+  gap: clamp(1.25rem, 4vw, 1.75rem);
 }
 
 .nav-link {
   position: relative;
   display: flex;
-  gap: 0.75rem;
+  gap: clamp(0.5rem, 2vw, 0.75rem);
   padding-block: var(--space-1);
   color: var(--white);
   font-size: clamp(0.9rem, 1vw, 1rem);
@@ -109,15 +109,15 @@
 .segmented-nav__list {
   display: flex;
   justify-content: center;
-  gap: 1.75rem;
+  gap: clamp(1rem, 4vw, 1.75rem);
 }
 
 .segment-link {
   position: relative;
   display: block;
-  padding-block-end: 0.75rem;
+  padding-block-end: clamp(0.5rem, 1.5vw, 0.75rem);
   color: var(--blue-300);
-  font-size: 0.875rem;
+  font-size: clamp(0.8rem, 1.2vw, 0.875rem);
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -143,7 +143,7 @@
 
 .detail-rule {
   height: 0.0625rem;
-  margin-block: 1.75rem;
+  margin-block: clamp(1.25rem, 4vw, 1.75rem);
   background: var(--white-25);
 }
 
@@ -165,22 +165,22 @@
 
 .home-description {
   max-width: 29.375rem;
-  margin-block-start: 1.25rem;
+  margin-block-start: clamp(1rem, 3vw, 1.25rem);
   margin-inline: auto;
 }
 
 .explore-button {
   display: grid;
   place-items: center;
-  width: 9.375rem;
-  height: 9.375rem;
+  width: clamp(8rem, 25vw, 9.375rem);
+  height: clamp(8rem, 25vw, 9.375rem);
   flex: 0 0 auto;
   border: 0;
   border-radius: 50%;
   background: var(--white);
   color: var(--navy);
   font-family: 'Bellefair', serif;
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   box-shadow: 0 0 0 0 var(--shadow-transparent);
@@ -217,13 +217,13 @@
 
 .destination-details p {
   max-width: 32.5rem;
-  margin-block-start: 1.125rem;
+  margin-block-start: clamp(1rem, 3vw, 1.125rem);
   margin-inline: auto;
 }
 
 .destination-stats {
   display: grid;
-  gap: 1.5rem;
+  gap: clamp(1rem, 4vw, 1.5rem);
 }
 
 .destination-stats div {
@@ -233,7 +233,7 @@
 
 .destination-stats dt {
   color: var(--blue-300);
-  font-size: 0.875rem;
+  font-size: clamp(0.8rem, 1.2vw, 0.875rem);
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
@@ -241,7 +241,7 @@
 .destination-stats dd {
   margin: 0;
   font-family: 'Bellefair', serif;
-  font-size: 1.75rem;
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
   text-transform: uppercase;
 }
 
@@ -269,22 +269,22 @@
 .crew-details .eyebrow {
   margin: 0;
   font-family: 'Bellefair', serif;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
 .crew-details .body-copy {
   max-width: 32.5rem;
-  margin-block-start: 1.125rem;
+  margin-block-start: clamp(1rem, 3vw, 1.125rem);
   margin-inline: auto;
 }
 
 .crew-copy .segmented-nav {
   order: -1;
-  margin-block-end: 2.125rem;
+  margin-block-end: clamp(1.5rem, 5vw, 2.125rem);
 }
 
 .crew-copy .segmented-nav__list {
-  gap: 0.875rem;
+  gap: clamp(0.625rem, 2vw, 0.875rem);
 }
 
 .crew-copy .segment-link {
@@ -306,17 +306,17 @@
 
 .crew-visual {
   display: flex;
-  min-height: 18.75rem;
+  min-height: clamp(16rem, 30vw, 18.75rem);
   align-items: flex-end;
   justify-content: center;
   order: 1;
-  margin-block-end: 2.125rem;
+  margin-block-end: clamp(1.5rem, 5vw, 2.125rem);
   border-block-end: 0.0625rem solid var(--white-25);
 }
 
 .crew-visual img {
   width: auto;
-  max-height: 19.375rem;
+  max-height: clamp(17rem, 31vw, 19.375rem);
 }
 
 /* Technology */
@@ -334,7 +334,7 @@
 
 .technology-grid {
   display: grid;
-  gap: 2.125rem;
+  gap: clamp(1.5rem, 5vw, 2.125rem);
   text-align: center;
 }
 
@@ -351,20 +351,20 @@
 }
 
 .segmented-nav__list--technology {
-  gap: 1rem;
+  gap: clamp(0.75rem, 2vw, 1rem);
 }
 
 .segment-link--technology {
   display: grid;
   place-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: clamp(2.25rem, 5vw, 2.5rem);
+  height: clamp(2.25rem, 5vw, 2.5rem);
   padding: 0;
   border: 0.0625rem solid var(--white-50);
   border-radius: 50%;
   color: var(--white);
   font-family: 'Bellefair', serif;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   letter-spacing: 0;
 }
 
@@ -385,12 +385,12 @@
 
 .technology-details .eyebrow {
   margin: 0;
-  font-size: 0.875rem;
+  font-size: clamp(0.8rem, 1.2vw, 0.875rem);
 }
 
 .technology-details .body-copy {
   max-width: 35.625rem;
-  margin-block-start: 1.25rem;
+  margin-block-start: clamp(1rem, 3vw, 1.25rem);
   margin-inline: auto;
 }
 
@@ -408,7 +408,7 @@
 
 .text-link {
   display: inline-block;
-  margin-block-start: 1.5rem;
+  margin-block-start: clamp(1.25rem, 4vw, 1.5rem);
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: 0.14em;

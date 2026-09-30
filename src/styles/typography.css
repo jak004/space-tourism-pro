@@ -1,8 +1,7 @@
-
 .page-heading {
   margin: 0;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.15em;
@@ -28,7 +27,7 @@
 
 .home-eyebrow {
   margin: 0 0 1rem;
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
 }
 
 .home-hero h1 {
@@ -54,7 +53,7 @@
 }
 
 @media (min-width: 48rem) {
-  .page-heading { font-size: 1.25rem; }
-  .home-eyebrow { font-size: 1.25rem; }
-  .crew-details h2 { margin-block-start: 0.75rem; }
+  .crew-details h2 {
+    margin-block-start: 0.75rem;
+  }
 }

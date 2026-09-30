@@ -1,0 +1,20 @@
+.page-heading { margin: 0; font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 400; line-height: 1; letter-spacing: .15em; text-transform: uppercase; }
+.page-heading span { margin-right: 18px; color: var(--white-50); font-weight: 600; }
+
+.home-hero h1,
+.destination-details h2,
+.crew-details h2,
+.technology-details h2,
+.not-found h1 { margin: 0; font-family: 'Bellefair', serif; font-weight: 400; text-transform: uppercase; }
+
+.home-eyebrow { margin: 0 0 16px; font-size: 1rem; }
+.home-hero h1 { font-size: clamp(5rem, 20vw, 9.375rem); line-height: .9; }
+.destination-details h2 { font-size: clamp(3.5rem, 12vw, 6.25rem); line-height: .95; }
+.crew-details h2 { margin-top: 8px; font-size: clamp(1.75rem, 6vw, 3.5rem); line-height: 1.1; }
+.technology-details h2 { margin-top: 10px; font-size: clamp(2.5rem, 7vw, 3.5rem); line-height: 1.05; }
+
+@media (min-width: 768px) {
+  .page-heading { font-size: 1.25rem; }
+  .home-eyebrow { font-size: 1.25rem; }
+  .crew-details h2 { margin-top: 12px; }
+}
